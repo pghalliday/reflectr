@@ -1,7 +1,7 @@
 {
   "name": "reflectr",
   "version": "1.0.0",
-  "description": "Mirror flickr accuont photos, albums, tags, descriptions, etc",
+  "description": "Mirror flickr account photos, albums, tags, descriptions, etc",
   "main": "index.js",
   "bin": "bin/reflectr.js",
   "scripts": {
