@@ -2,6 +2,12 @@
 
 CLI tool to mirror photos, albums, tags, descriptions, etc for a Flickr account.
 
+## Install
+
+```
+npm install -g reflectr
+```
+
 ## Usage
 
 First create an application at [Flickr](https://www.flickr.com/services/apps/) to generate an API key and secret.
