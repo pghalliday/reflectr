@@ -1,23 +1,26 @@
 {
-  "name": "flickr-test",
+  "name": "reflectr",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mirror flickr accuont photos, albums, tags, descriptions, etc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pghalliday/flickr-test.git"
+    "url": "git+https://github.com/pghalliday/reflectr.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pghalliday/flickr-test/issues"
+    "url": "https://github.com/pghalliday/reflectr/issues"
   },
-  "homepage": "https://github.com/pghalliday/flickr-test#readme",
+  "homepage": "https://github.com/pghalliday/reflectr#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "flickr-sdk": "^3.9.0"
+    "cryptr": "^6.0.1",
+    "flickr-sdk": "^3.9.0",
+    "open": "^7.0.1",
+    "progress": "^2.0.3",
+    "prompts": "^2.3.0"
   }
 }
