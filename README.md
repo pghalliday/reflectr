@@ -19,3 +19,5 @@ reflectr
 ```
 
 You will then be prompted for a passphrase to store encrypted Flickr secrets, your Flickr API key and secret, and to authorize that API key for your account.
+
+This information will be stored, encrypted, in the folder as `.reflectr.json` so that on subsequent runs you only need to enter the passphrase to resync with your account.
