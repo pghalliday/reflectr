@@ -1,5 +1,6 @@
 const config = require('./lib/config')
-const createFlickr = require('./lib/create-flickr')
+const flickrAPI = require('./lib/flickr-api')
+const flickr = require('./lib/flickr')
 
 function print(obj) {
   console.log(JSON.stringify(obj, null, 2))
@@ -8,8 +9,15 @@ function print(obj) {
 async function reflectr() {
   try {
     await config.init()
-    const flickr = await createFlickr()
-    print(await flickr.test.login())
+    await flickrAPI.init()
+    const [
+      photos,
+      photosets,
+    ] = await Promise.all([
+      flickr.getPhotos(),
+      flickr.getPhotosets(),
+    ])
+    print(photosets)
   } catch (err) {
     console.error(err)
   }
