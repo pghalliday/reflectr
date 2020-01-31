@@ -5,7 +5,7 @@ function print(obj) {
   console.log(JSON.stringify(obj, null, 2))
 }
 
-async function main() {
+async function reflectr() {
   try {
     await config.init()
     const flickr = await createFlickr()
@@ -15,4 +15,4 @@ async function main() {
   }
 }
 
-main()
+module.exports = reflectr

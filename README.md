@@ -1,22 +1,11 @@
-# flickr-test
+# reflectr
 
-Create a `secrets.js` file to contain the Flickr API token and secret
+CLI tool to mirror photos, albums, tags, descriptions, etc for a Flickr account.
 
-```javascript
-module.exports = {
-  key: 'KEY',
-  secret: 'SECRET',
-}
-```
+## Usage
 
-To generate SSL cert run the following script
+Create a folder to store the mirrored data and un the following command in that folder.
 
 ```
-./keys.sh
-```
-
-To override the Google Chrome warning for the the certificate type the following after clicking anywhere on the error page
-
-```
-thisisunsafe
+reflectr
 ```

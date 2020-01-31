@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Mirror flickr accuont photos, albums, tags, descriptions, etc",
   "main": "index.js",
+  "bin": "bin/reflectr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/pghalliday/reflectr.git"
   },
-  "author": "",
+  "author": "Peter Halliday <pghalliday@gmail.com> (https://pghalliday.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pghalliday/reflectr/issues"
