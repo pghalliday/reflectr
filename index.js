@@ -1,26 +1,23 @@
-const config = require('./lib/config')
-const flickrAPI = require('./lib/flickr-api')
-const flickr = require('./lib/flickr')
+const Flickr = require('flickr-sdk')
+const FlickrPhotos = require('./lib/flickr-photos')
+const FlickrPhotosets = require('./lib/flickr-photosets')
 
-function print(obj) {
-  console.log(JSON.stringify(obj, null, 2))
-}
+module.exports = class Reflector {
+  constructor(config) {
+    const flickr = new Flickr(Flickr.OAuth.createPlugin(
+      config.key,
+      config.secret,
+      config.oauthToken,
+      config.oauthTokenSecret,
+    ))
+    this.photos = new FlickrPhotos(flickr, config.id)
+    this.photosets = new FlickrPhotosets(flickr, config.id)
+  }
 
-async function reflectr() {
-  try {
-    await config.init()
-    await flickrAPI.init()
-    const [
-      photos,
-      photosets,
-    ] = await Promise.all([
-      flickr.getPhotos(),
-      flickr.getPhotosets(),
+  async run() {
+    await Promise.all([
+      this.photos.load(),
+      this.photosets.load(),
     ])
-    print(photosets)
-  } catch (err) {
-    console.error(err)
   }
 }
-
-module.exports = reflectr
