@@ -10,8 +10,8 @@ module.exports = class Reflector {
       config.oauthToken,
       config.oauthTokenSecret,
     ))
-    this.photos = new FlickrPhotos(flickr, config.id)
-    this.photosets = new FlickrPhotosets(flickr, config.id)
+    this.photos = new FlickrPhotos(flickr, config.id, config.directory)
+    this.photosets = new FlickrPhotosets(flickr, config.id, config.directory)
   }
 
   async run() {
