@@ -67,4 +67,4 @@ To see how these are put together with the `Reflectr` class, see `./bin/reflectr
 
 ## Unknown limitations
 
-The are probably many, feel free to let me know if you require a feature and I'll be happy to take it into consideration (also feel free to submit pull requests!)
+These are probably innumerable, feel free to let me know if you require a feature or bug fix and I'll be happy to take it into consideration (also feel free to submit pull requests!)
