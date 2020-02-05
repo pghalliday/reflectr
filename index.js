@@ -21,9 +21,21 @@ module.exports = class Reflector extends EventEmitter {
 
   async run() {
     await temp.init(this._directory)
+    this.emit('start-logging', {
+      emitter: this._photos,
+      meta: {
+        section: 'photos',
+      },
+    })
     this.emit('start-progress', {
       type: constants.PROGRESS_TYPE_PHOTOS,
       emitter: this._photos,
+    })
+    this.emit('start-logging', {
+      emitter: this._photosets,
+      meta: {
+        section: 'photosets',
+      },
     })
     this.emit('start-progress', {
       type: constants.PROGRESS_TYPE_PHOTOSETS,
