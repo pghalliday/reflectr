@@ -19,6 +19,7 @@ async function start() {
     await reflectr.run()
   } catch (err) {
     console.error(err)
+    process.exit(-1)
   }
 }
 
