@@ -24,7 +24,6 @@
     "flickr-sdk": "^3.9.0",
     "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
-    "multi-progress": "^2.0.0",
     "open": "^7.0.1",
     "p-throttle": "^3.1.0",
     "prompts": "^2.3.0",

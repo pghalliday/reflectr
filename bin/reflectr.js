@@ -6,7 +6,7 @@ const Reflectr = require('../')
 const ui = require('../lib/ui')
 const log = require('../lib/log')
 
-async function start() {
+async function main() {
   try {
     const config = new Config(process.cwd())
     await config.init()
@@ -26,4 +26,4 @@ async function start() {
   }
 }
 
-start()
+main()
