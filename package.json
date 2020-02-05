@@ -2,6 +2,7 @@
   "name": "@pghalliday/reflectr",
   "version": "1.0.0",
   "description": "Mirror flickr account photos, albums, tags, descriptions, etc",
+  "keywords": "flickr backup mirror photos albums",
   "main": "index.js",
   "bin": "bin/reflectr.js",
   "scripts": {
