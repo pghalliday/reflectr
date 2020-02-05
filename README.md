@@ -5,7 +5,7 @@ CLI tool to mirror photos, albums, tags, descriptions, etc for a Flickr account.
 ## Install
 
 ```
-npm install -g reflectr
+npm install -g @pghalliday/reflectr
 ```
 
 ## Usage
