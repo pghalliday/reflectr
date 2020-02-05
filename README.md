@@ -52,7 +52,7 @@ async function main() {
 main()
 ```
 
-For examples on how to get the OAuth token, etc, see `./lib/config.js`.
+For an example of how to get the OAuth token, etc, see `./lib/config.js`.
 
 For examples on how to plug in progress and logging implementations, see `./lib/log.js` and `./lib/ui.js`.
 
