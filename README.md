@@ -29,7 +29,7 @@ A log for the last run will be stored in the folder as `log.json`.
 `Reflectr` can also be used as a library in your own projects.
 
 ```javascript
-const Reflectr = require('reflectr')
+const Reflectr = require('@pghalliday/reflectr')
 
 const reflectr = new Reflectr({
   directory: 'WORKING_DIRECTORY',
@@ -64,7 +64,7 @@ To see how these are put together with the `Reflectr` class, see `./bin/reflectr
 - Calls to the flickr API are limited to 1 per second to avoid the flickr rate limits
   - This throttling is applied globally to all instances of `Reflectr` if you are using the API
 - Only downloads the original photos and thumbnails, thumbnails will reflect edits made to images in flickr but the original photos may not
-- The flickr API does not appear to be super stable so 500 errors and timeouts may occur during long running jobs and retries are not currently implemented so the process will just error/exit
+- The flickr API does not appear to be super stable so 500 errors and timeouts may occur during long running jobs and downloads and API calls will retry up to 5 times but then the job will exit with an error
 
 ## Unknown limitations
 

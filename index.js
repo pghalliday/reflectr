@@ -8,19 +8,25 @@ const temp = require('./lib/temp')
 module.exports = class Reflector extends EventEmitter {
   constructor(config) {
     super()
-    const flickr = new Flickr(
+    this._flickr = new Flickr(
       config.key,
       config.secret,
       config.oauthToken,
       config.oauthTokenSecret,
     )
     this._directory = config.directory
-    this._photos = new Photos(flickr, config.id, config.directory)
-    this._photosets = new Photosets(flickr, config.id, config.directory)
+    this._photos = new Photos(this._flickr, config.id, config.directory)
+    this._photosets = new Photosets(this._flickr, config.id, config.directory)
   }
 
   async run() {
     await temp.init(this._directory)
+    this.emit('start-logging', {
+      emitter: this._flickr,
+      meta: {
+        section: 'flickr',
+      },
+    })
     this.emit('start-logging', {
       emitter: this._photos,
       meta: {
