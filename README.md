@@ -64,7 +64,7 @@ To see how these are put together with the `Reflectr` class, see `./bin/reflectr
 - Calls to the flickr API are limited to 1 per second to avoid the flickr rate limits
   - This throttling is applied globally to all instances of `Reflectr` if you are using the API
 - Only downloads the original photos and thumbnails, thumbnails will reflect edits made to images in flickr but the original photos may not
-- The flickr API does not appear to be super stable so 500 errors and timeouts may occur during long running jobs and downloads and API calls will retry up to 5 times but then the job will exit with an error
+- The flickr API does not appear to be super stable so 500 errors and timeouts may occur during long running jobs. Downloads and API calls will retry up to 25 times using an exponential backoff algorithm that may take hours to max out, but then the job will exit with an error
 
 ## Unknown limitations
 
