@@ -33,12 +33,12 @@ const Reflectr = require('@pghalliday/reflectr')
 
 const reflectr = new Reflectr({
   directory: 'WORKING_DIRECTORY',
-  key: 'FLICKR API KEY',
-  secret: 'FLICKR API SECRET',
-  oauthToken: 'FLICKR USER OAUTH TOKEN',
-  oauthTokenSecret: 'FLICR USER OATH TOKEN SECRET',
-  id: 'FLICKR USER ID',
-  username: 'FLICKR USERNAME',
+  key: 'FLICKR_API_KEY',
+  secret: 'FLICKR_API_SECRET',
+  oauthToken: 'FLICKR_USER_OAUTH_TOKEN',
+  oauthTokenSecret: 'FLICKR_USER_OATH_TOKEN_SECRET',
+  id: 'FLICKR_USER_ID',
+  username: 'FLICKR_USERNAME',
 })
 
 async function main() {
