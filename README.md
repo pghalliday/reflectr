@@ -12,7 +12,7 @@ As well as backing up the original photos as uploaded to Flickr, Reflectr will q
 
 At this time no UI is implemented to browse the backed up data but at least you can feel secure that all that work you put into organising and labelling your collection is safe where you can always reach it.
 
-Note though, that this is not a full back up solution. If data is deleted from Flickr then running the tool will aslo delete that data locally. However there are plenty of other backup tools that you can use to provide a historical backup of your local data (eg. Apple Time Machine, etc). Also, at this time, only select information matching my own requirements is synced (this should be quite simple to extend though).
+Note though, that this is not a full back up solution. If data is deleted from Flickr then running the tool will also delete that data locally. However there are plenty of other backup tools that you can use to provide a historical backup of your local data (eg. Apple Time Machine, etc). Also, at this time, only select information matching my own requirements is synced (this should be quite simple to extend though).
 
 ## Install
 
