@@ -2,6 +2,10 @@
 
 CLI tool to mirror photos, albums, tags, descriptions, etc for a Flickr account.
 
+## Motivation
+
+So you've spent hours cataloguing your photo collection in Flickr, adding titles, descriptions and tags and then sorted them into albums. But where does that data live? Well, pretty much only at Flickr! If this makes you nervous then this is the tool for you. As well as backing up the original photos as uploaded to Flickr, Reflectr will also query the Flickr APIs to gather the meta data and album (photoset in API) information and store that raw data locally. At this time no UI is implemented to browse the backed up data but at least you can feel secure that all that work you put into organising and labelling your collection is back under your own control.
+
 ## Install
 
 ```
